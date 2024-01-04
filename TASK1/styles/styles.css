@@ -14,13 +14,20 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     padding-inline: 1rem;
     align-items: center;
-    box-shadow: 0px 5px 6px 0px rgba(117, 117, 117, 1);
+    box-shadow: 0px 5px 6px 0px #757575;
     padding-block: 0.125rem;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 
 ul {
@@ -29,6 +36,7 @@ ul {
 
 .brand {
     padding-inline: 1rem;
+    display: inline-block;
 
     &>.brand-text {
         font-size: 2rem;
@@ -38,7 +46,6 @@ ul {
         background: linear-gradient(to left, #FF4343 0%, #D99100 100%, #FF3730 9%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
     }
 }
 
@@ -62,17 +69,181 @@ ul {
     }
 }
 
-.nav-item button {
+.nav-item button,
+.signin {
     margin-inline: 1rem;
     font-size: 1.25rem;
     padding-block: 0.25rem;
     padding-inline: 0.5rem;
     border: 3px solid #353535;
     border-radius: 1rem;
-    cursor: pointer;
     transition: all 0.5s ease-in-out;
 
     &:hover {
         background-color: #3ef99c;
     }
+}
+
+#home {
+    background-image: url('../assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5%;
+}
+
+#inner-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    background-color: #00000070;
+    align-items: center;
+
+    &>p {
+        text-align: center;
+        padding-block: 1rem;
+    }
+}
+
+.first-text {
+    color: #efefef;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.sec-text {
+    color: #ffffffd8;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.signin {
+    width: 25rem;
+    font-size: 1.5rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    margin-block: 0.5rem;
+    border: 3px solid #806600;
+    border-radius: 1.25rem;
+
+    &>i {
+        margin-inline-end: 0.25rem;
+    }
+}
+
+#about,
+#services,
+#contact {
+    padding-block: 2rem;
+    padding-inline: 0.5rem;
+}
+
+.section-heading {
+    display: inline;
+    font-size: 1.75rem;
+    font-family: cursive;
+    margin-inline-start: 2rem;
+    padding-inline: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 3px solid #000;
+
+}
+
+.about-box,
+#contact-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-block: 1rem;
+
+    &>img {
+        margin-inline: 1rem;
+        width: 30vw;
+        box-shadow: 3px 7px 19px 1px #000000;
+        -webkit-box-shadow: 3px 7px 19px 1px #000000;
+        -moz-box-shadow: 3px 7px 19px 1px #000000;
+    }
+}
+
+.text-box {
+    padding-block: 2rem;
+    padding-inline: 4rem;
+    font-size: 1.25rem;
+    align-items: center;
+
+    &>h2 {
+        line-height: 4rem;
+        text-align: center;
+    }
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 0.5rem;
+}
+
+.service-card {
+    width: 20rem;
+    height: 25rem;
+    padding: 0.5rem;
+    margin-block: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 5%;
+    background-color: #f6ead4;
+    transition: all 0.5s ease-in-out;
+
+    &>.card-image {
+        width: 18rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 5%;
+    }
+
+    &>h3 {
+        line-height: 2rem;
+        font-size: 1.25rem;
+    }
+
+    &>p {
+        text-align: center;
+    }
+
+    &:hover {
+        box-shadow: 4px 8px 9px 0px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 4px 8px 9px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 4px 8px 9px 0px rgba(0, 0, 0, 1);
+        background-color: #f2f0ea;
+    }
+}
+
+.contact-button {
+    margin-block: 1rem;
+}
+
+footer {
+    padding-block: 1rem;
+    background-color: #000000db;
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    padding-inline-start: 3rem;
+
+    &>.social-icons {
+        padding-inline: 1.5rem;
+        font-size: 2.5rem;
+
+        &>a i {
+            color: #fff;
+        }
+    }
+
 }
