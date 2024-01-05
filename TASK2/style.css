@@ -10,7 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 23rem;
+    width: 22rem;
+    height:32rem;
     padding-inline: 1rem;
     padding-bottom: 1rem;
     border: 2px solid #fff;
@@ -25,6 +26,7 @@ body {
         line-height: 2rem;
         margin-block: 1rem;
         margin-inline: 0.5rem;
+        height: 3rem;
         font-size: 2rem;
         border-radius: 0.5rem;
 
@@ -47,4 +49,14 @@ body {
     border: 2px solid #ff64ef;
     border-radius: 10%;
     cursor: pointer;
+    transition: 0.2s all;
+    align-items: center;
+}
+.operator{
+    background-color: #4f69ab;
+}
+.button:active {
+    box-shadow: -3px -3px 1px 0px #a4a4a4 inset;
+    -webkit-box-shadow: -3px -3px 1px 0px #a4a4a4 inset;
+    -moz-box-shadow: -3px -3px 1px 0px #a4a4a4 inset;
 }
